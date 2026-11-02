@@ -20,6 +20,7 @@ macro_rules! planned {
     };
 }
 
+mod arch;
 mod bom;
 mod browser;
 pub(crate) mod clearance;
@@ -333,6 +334,7 @@ pub fn command_specs() -> Vec<&'static CommandSpec> {
     v.extend(construct::COMMANDS.iter());
     v.extend(sheet::COMMANDS.iter());
     v.extend(plastic::COMMANDS.iter());
+    v.extend(arch::COMMANDS.iter());
     v.extend(frame::COMMANDS.iter());
     v.extend(component::COMMANDS.iter());
     v.extend(component_link::COMMANDS.iter());

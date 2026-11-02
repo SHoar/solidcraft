@@ -113,6 +113,7 @@ pub const SECTIONS: &[Section] = &[
         ids: &["sketch.create", "sketch.edit", "sketch.line3d", "sketch.arc3d", "sketch.spline3d", "sketch.point3d"],
     },
     Section { tab: "MODEL", panel: "CREATE", promoted: 3, ids: &["solid.extrude", "solid.revolve", "solid.hole"] },
+    Section { tab: "MODEL", panel: "ARCHITECTURE", promoted: 2, ids: &["arch.wall", "arch.opening"] },
     Section {
         tab: "MODEL",
         panel: "MODIFY",
@@ -476,6 +477,7 @@ pub fn ribbon_family_label(family: &crate::sketch_families::Family) -> &'static 
 /// Registry placement → default ribbon destination, after explicit id overrides.
 pub const PLACEMENTS: &[(&str, &str, &str, &str)] = &[
     ("SOLID", "CREATE", "MODEL", "CREATE"),
+    ("SOLID", "ARCHITECTURE", "MODEL", "ARCHITECTURE"),
     ("SOLID", "MODIFY", "MODEL", "MODIFY"),
     ("SOLID", "CONSTRUCT", "MODEL", "CONSTRUCT"),
     ("SOLID", "ASSEMBLE", "ASSEMBLE", "JOINTS"),

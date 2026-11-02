@@ -1,0 +1,8 @@
+{
+  "en": {
+    "cmd.arch.wall": "Wall",
+    "cmd.arch.opening": "Opening",
+    "help.arch.wall": "Builds a wall as a thin extrude along a plan centerline from a to b. Use it for exterior and interior walls in a floor plan.",
+    "help.arch.opening": "Cuts a door or window opening through walls along a centerline. Use it after the walls are in place."
+  }
+}
